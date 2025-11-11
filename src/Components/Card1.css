@@ -1,0 +1,69 @@
+#card{
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem auto;
+    max-width: 70vw;
+    gap: 2rem;
+}
+
+.number{
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    background: linear-gradient(135deg, #2f4f4f 0%, #1a3a3a 100%);
+    color: #fff;
+    width: clamp(60px, 8vw, 100px);
+    height: clamp(60px, 8vw, 100px);
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cont{
+    flex: 1;
+}
+
+.cont h1{
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.cont p{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.6;
+    color: #555;
+}
+
+.darkCard .cont p{
+    color: #ccc;
+}
+
+.darkCard .cont h1{
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    #card{
+        max-width: 85vw;
+        gap: 1.5rem;
+    }
+
+    .number{
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .cont h1{
+        font-size: 1.5rem;
+    }
+
+    .cont p{
+        font-size: 1rem;
+    }
+}
